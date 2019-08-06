@@ -2,6 +2,8 @@ import java.util.List;
 
 import linkedlist.ListNode;
 import linkedlist.second.lv1.LC234;
+import linkedlist.second.lv2.LC143;
+import linkedlist.second.lv2.LC24;
 import searchandsort.LC324;
 import searchandsort.LC969;
 import tree.TreeNode;
@@ -18,6 +20,8 @@ public class Main {
         test872();
         test897();
         test234();
+        test24();
+        test143();
     }
 
     private static void test969() {
@@ -47,5 +51,13 @@ public class Main {
 
     private static void test234() {
         new LC234().helper(ListNode.getMockListNode());
+    }
+
+    private static void test24() {
+        new LC24().swapPairs(ListNode.getMockListNode());
+    }
+
+    private static void test143() {
+        new LC143().reorderList(ListNode.getMockListNode());
     }
 }
