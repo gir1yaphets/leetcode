@@ -5,6 +5,7 @@ import linkedlist.second.lv1.LC234;
 import linkedlist.second.lv2.LC143;
 import linkedlist.second.lv2.LC24;
 import linkedlist.second.lv3.LC142;
+import linkedlist.second.lv3.SnapshotArray;
 import searchandsort.LC324;
 import searchandsort.LC969;
 import tree.TreeNode;
@@ -15,15 +16,16 @@ import tree.second.LC872;
 public class Main {
 
     public static void main(String[] args) {
-        test969();
-        test324();
-        test110();
-        test872();
-        test897();
-        test234();
-        test24();
-        test143();
-        test142();
+//        test969();
+//        test324();
+//        test110();
+//        test872();
+//        test897();
+//        test234();
+//        test24();
+//        test143();
+//        test142();
+        test1146();
     }
 
     private static void test969() {
@@ -65,5 +67,12 @@ public class Main {
 
     private static void test142() {
         new LC142().detectCycle(ListNode.getMockListNode());
+    }
+
+    private static void test1146() {
+        SnapshotArray snapshotArray = new SnapshotArray(3);
+        snapshotArray.set(0, 5);
+        snapshotArray.snap();
+        snapshotArray.get(0, 0);
     }
 }
