@@ -6,12 +6,15 @@ import linkedlist.second.lv2.LC143;
 import linkedlist.second.lv2.LC24;
 import linkedlist.second.lv3.LC142;
 import linkedlist.second.lv3.SnapshotArray;
+import linkedlist.second.lv4.LC445;
+import linkedlist.second.lv5.LC92;
 import searchandsort.LC324;
 import searchandsort.LC969;
 import tree.TreeNode;
 import tree.first.LC897IncreasingOrderSearchTree;
 import tree.second.LC110;
 import tree.second.LC872;
+import tree.second.lv1.LC114;
 
 public class Main {
 
@@ -25,7 +28,10 @@ public class Main {
 //        test24();
 //        test143();
 //        test142();
-        test1146();
+//        test1146();
+//        test445();
+//        test92();
+        test114();
     }
 
     private static void test969() {
@@ -74,5 +80,17 @@ public class Main {
         snapshotArray.set(0, 5);
         snapshotArray.snap();
         snapshotArray.get(0, 0);
+    }
+
+    private static void test445() {
+        new LC445().deleteDuplicates(ListNode.array2ListNode(new int[] {1,1}));
+    }
+
+    private static void test92() {
+        new LC92().reverseBetween(ListNode.array2ListNode(new int[] {3,5}), 1, 2);
+    }
+
+    private static void test114() {
+        new LC114().flatten(TreeNode.getMockTree5());
     }
 }

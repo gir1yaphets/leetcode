@@ -1,3 +1,5 @@
+package other;
+
 public class LC190ReverseBits {
     public int reverseBits(int n) {
         int result = 0;

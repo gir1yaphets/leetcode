@@ -1,3 +1,5 @@
+package other;
+
 public class LeetCode7ReverseInterger {
     public static int reverseMine(int x) {
         int result = 0;

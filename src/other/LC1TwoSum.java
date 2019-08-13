@@ -1,3 +1,5 @@
+package other;
+
 public class LC1TwoSum {
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];

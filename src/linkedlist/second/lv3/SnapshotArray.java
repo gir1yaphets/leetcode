@@ -5,6 +5,7 @@ import java.util.Map;
 
 /**
  * LC1146
+ * MLT
  */
 public class SnapshotArray {
     private int[] array;

@@ -23,4 +23,15 @@ public class ListNode {
 
         return node0;
     }
+
+    public static ListNode array2ListNode(int[] array) {
+        ListNode res = new ListNode(-1);
+        ListNode curr = res;
+        for (int i = 0; i < array.length; i++) {
+            curr.next = new ListNode(array[i]);
+            curr = curr.next;
+        }
+
+        return res.next;
+    }
 }

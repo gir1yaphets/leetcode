@@ -1,3 +1,5 @@
+package other;
+
 public class LC912SortArray {
 //    public int[] sortArray(int[] nums) {
 //        int temp;

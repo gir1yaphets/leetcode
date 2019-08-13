@@ -61,4 +61,35 @@ public class LC2 {
 
         return res.next;
     }
+
+    /**
+     * Simplify for solution
+     * @param l1
+     * @param l2
+     * @return
+     */
+    private ListNode helper2(ListNode l1, ListNode l2) {
+        ListNode res = new ListNode(0);
+        ListNode curr1 = l1, curr2 = l2, curr = res;
+        int carry = 0;
+
+        while (curr1 != null || curr2 != null) {
+            int x = curr1 == null ? 0 : curr1.val;
+            int y = curr2 == null ? 0 : curr2.val;
+
+            int sum = x + y + carry;
+            carry = sum / 10;
+            curr.next = new ListNode(sum % 10);
+            curr = curr.next;
+
+            if (curr1 != null) curr1 = curr1.next;
+            if (curr2 != null) curr2 = curr2.next;
+        }
+
+        if (carry > 0) {
+            curr.next = new ListNode(carry);
+        }
+
+        return res.next;
+    }
 }
